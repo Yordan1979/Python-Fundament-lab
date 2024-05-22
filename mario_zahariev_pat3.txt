@@ -1,4 +1,4 @@
-nnum_of_stars = int(input())
+num_of_stars = int(input())
 import math
 right_side1 = math.floor(num_of_stars // 2)*2
 left_side1 = math.floor(num_of_stars // 2)* 2
