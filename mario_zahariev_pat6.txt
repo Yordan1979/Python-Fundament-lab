@@ -1,7 +1,7 @@
 num_of_stars = int(input())
 import math
-right_side1 = math.floor(num_of_stars // 2)*2
-left_side1 = math.floor(num_of_stars // 2)* 2
+right_side1 = math.floor(num_of_stars // 2)*4
+left_side1 = math.floor(num_of_stars // 2)* 4
 middle = - 1
 
 for stars in range(1,num_of_stars +1):
