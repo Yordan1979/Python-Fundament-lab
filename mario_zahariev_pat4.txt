@@ -1,0 +1,3 @@
+num_of_stars = int(input())
+for stars in range(num_of_stars, -1,-1):
+    print(stars * '*')
