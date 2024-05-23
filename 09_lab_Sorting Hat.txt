@@ -1,0 +1,26 @@
+name = input()
+
+while name != 'Welcome!':
+
+    if name == 'Welcome!':
+
+        break
+    if name == "Voldemort":
+
+        break
+    elif name != "Voldemort":
+        num_charters =len(name)
+        if num_charters < 5:
+            print(f"{name} goes to Gryffindor.")
+        elif num_charters == 5:
+            print(f"{name} goes to Slytherin.")
+        elif num_charters == 6:
+            print(f"{name} goes to Ravenclaw.")
+        elif num_charters > 6:
+            print(f"{name} goes to Hufflepuff.")
+
+    name = input()
+if name == 'Welcome!':
+    print("Welcome to Hogwarts.")
+elif name == "Voldemort":
+    print("You must not speak of that name!")
