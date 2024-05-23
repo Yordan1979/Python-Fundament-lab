@@ -1,0 +1,43 @@
+quantity_of_ornaments = int(input())
+left_days_to_Christmas = int(input())
+Ornament_Set_price = 2
+Tree_Skirt_price = 5
+Tree_Garland_price = 3
+Tree_Light_price = 15
+Ornament_Set_points = 5
+Tree_Skirt_points = 3
+Tree_Garland_points = 10
+Tree_Light_points = 17
+
+total_coast = 0
+total_points_christmas_spirit = 0
+for Christmas in range(1, left_days_to_Christmas +1):
+    if Christmas % 11 == 0:
+        quantity_of_ornaments += 2
+    if Christmas % 2 == 0:
+        total_coast += Ornament_Set_price * quantity_of_ornaments
+        total_points_christmas_spirit += Ornament_Set_points
+    if Christmas % 3 == 0:
+        total_coast += Tree_Skirt_price * quantity_of_ornaments
+        total_coast += Tree_Garland_price * quantity_of_ornaments
+        total_points_christmas_spirit += Tree_Skirt_points
+        total_points_christmas_spirit += Tree_Garland_points
+    if Christmas % 5 == 0:
+        total_coast += Tree_Light_price * quantity_of_ornaments
+        total_points_christmas_spirit += Tree_Light_points
+    if Christmas % 15 == 0:
+        total_points_christmas_spirit += 30
+    if Christmas % 10 == 0 :
+        total_points_christmas_spirit -= 20
+        total_coast += Tree_Skirt_price
+        total_coast += Tree_Garland_price
+        total_coast += Tree_Light_price
+if left_days_to_Christmas % 10 == 0:
+    total_points_christmas_spirit -= 30
+print(f"Total cost: {total_coast}")
+print(f"Total spirit: {total_points_christmas_spirit}")
+
+
+
+
+
