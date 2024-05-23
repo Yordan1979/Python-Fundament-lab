@@ -1,0 +1,18 @@
+event = input()
+counter_coffee = 0
+while event != 'END':
+
+    if event == 'coding'.lower() or event == 'dog'.lower() or event =='movie'.lower() or event == 'cat'.lower():
+        counter_coffee +=1
+    elif event == 'CODING'.upper() or event == 'DOG'.upper() or event =='MOVIE'.upper() or event == 'CAT'.upper():
+        counter_coffee +=2
+
+
+    if counter_coffee > 5:
+        print('You need extra sleep')
+        break
+    if event == 'END':
+        break
+    event = input()
+if counter_coffee <= 5:
+    print(counter_coffee)
