@@ -1,0 +1,8 @@
+numbers_character = int(input())
+sum_of_char = 0
+for character in range(numbers_character):
+    char = input()
+    ord_char = ord(char)
+    sum_of_char += ord_char
+
+print(f"The sum equals: {sum_of_char}")
