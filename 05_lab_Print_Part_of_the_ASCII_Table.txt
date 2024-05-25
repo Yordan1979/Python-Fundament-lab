@@ -1,0 +1,7 @@
+first_number = int(input())
+second_number = int(input())
+number2 = ''
+for numbers in range(first_number, second_number +1):
+    number1 = chr(numbers)
+    number2 += number1 + ' '
+print(number2)
