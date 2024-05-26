@@ -1,0 +1,15 @@
+number_of_snowballs = int(input())
+highes_snowball = - 100000000
+weight_of_the_snowball1 = 0
+snowball_time1 = 0
+snowball_quality1 = 0
+for snowballs in range(1, number_of_snowballs + 1):
+    weight_of_the_snowball = int(input())
+    snowball_time = int(input())
+    snowball_quality = int(input())
+    snowball_value = (weight_of_the_snowball / snowball_time) ** snowball_quality
+    if highes_snowball < snowball_value:
+        highes_snowball = snowball_value
+        weight_of_the_snowball1 = weight_of_the_snowball
+        snowball_time1 = snowball_time
+        snowball_quality1 = snowball_quality
