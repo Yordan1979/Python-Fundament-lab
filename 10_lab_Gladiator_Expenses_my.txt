@@ -1,0 +1,24 @@
+lost_games = int(input())
+helmet_price = float(input())
+sword_price = float(input())
+shield_price = float(input())
+armor_price = float(input())
+repair_helmet = 0
+repair_sword = 0
+repair_shield = 0
+repair_armor = 0
+for games in range(1, lost_games):
+    if games % 2 == 0:
+        repair_helmet += 1
+    if games % 3 == 0:
+        repair_sword += 1
+    if games % 6 == 0:
+        repair_shield += 1
+        if repair_shield % 2 == 0:
+            repair_armor += 1
+
+gladiator_expenses = ((helmet_price * repair_helmet)
+                      +(sword_price * repair_sword)
+                      + (shield_price * repair_shield)
+                      + (armor_price * repair_armor))
+print(f"Gladiator expenses: {gladiator_expenses:.2f} aureus")
