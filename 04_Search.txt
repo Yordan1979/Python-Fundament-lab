@@ -1,0 +1,11 @@
+number_sentences = int(input())
+special_word = input()
+all_sentences = []
+with_special_word_sentences = []
+for n in range(number_sentences):
+    sentences = input()
+    all_sentences.append(sentences)
+    if special_word in sentences:
+        with_special_word_sentences.append(sentences)
+print(all_sentences)
+print(with_special_word_sentences)
