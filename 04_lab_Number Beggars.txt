@@ -1,0 +1,16 @@
+number_of_offers = input().split(', ')
+number_of_beggars = int(input())
+list_offers_integer = []
+
+for offers in number_of_offers:
+    list_offers_integer.append(int(offers))
+
+final_list = []
+start_index = 0
+for current_beggar in range(number_of_beggars):
+    current_beggar_sum = 0
+    for current_index in range(start_index,len(list_offers_integer),number_of_beggars):
+        current_beggar_sum += list_offers_integer[current_index]
+    final_list.append(current_beggar_sum)
+    start_index += 1
+print(final_list)
