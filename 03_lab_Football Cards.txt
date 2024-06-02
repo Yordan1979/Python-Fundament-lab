@@ -1,0 +1,21 @@
+team_a = 11
+Team_A = []
+for team_A in range(1, team_a + 1):
+    Team_A.append('A-'+str(team_A))
+team_b = 11
+Team_B = []
+for team_B in range(1,team_b +1):
+    Team_B.append('B-'+str(team_B))
+Game_was_terminated = False
+players = input().split()
+for player in players:
+    if player in Team_A:
+        Team_A.remove(player)
+    elif player in Team_B:
+        Team_B.remove(player)
+    if len(Team_A) < 7 or len(Team_B) < 7:
+        Game_was_terminated = True
+        break
+print(f"Team A - {len(Team_A)}; Team B - {len(Team_B)}")
+if Game_was_terminated :
+    print("Game was terminated")
