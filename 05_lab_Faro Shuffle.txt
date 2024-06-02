@@ -1,0 +1,13 @@
+cards = input().split()
+number_of_cards = int(input())
+list_of_cards = []
+for shuffle in range(1,number_of_cards+1):
+    middle_of_the_cards = len(cards)//2
+    left_side = cards[:middle_of_the_cards]
+    right_side = cards[middle_of_the_cards:]
+    cards_after_shuffling  = []
+    for cards_index in range(len(left_side)): # right side
+        cards_after_shuffling.append(left_side[cards_index])
+        cards_after_shuffling.append(right_side [cards_index])
+    cards = cards_after_shuffling
+print(cards)
