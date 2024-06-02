@@ -1,0 +1,6 @@
+single_str = input().split()
+opposite_numbers = []
+for number in single_str:
+    opposite_number = -int(number)
+    opposite_numbers.append(opposite_number)
+print(opposite_numbers)
